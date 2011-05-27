@@ -1,4 +1,3 @@
 [Project]
+Manager=KDevCustomMakeManager
 Name=pandora
-Manager=KDevCMakeManager
-VersionControl=kdevgit

@@ -1,11 +1,9 @@
-#include <QtGui/QApplication>
-#include "pandora.h"
+#include "application.h"
 
+#include <QtGui/QWidget>
 
 int main(int argc, char** argv)
 {
-    QApplication app(argc, argv);
-    pandora foo;
-    foo.show();
+    Application app(argc, argv);
     return app.exec();
 }
