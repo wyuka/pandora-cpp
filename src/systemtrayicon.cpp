@@ -36,7 +36,7 @@
 SystemTrayIcon::SystemTrayIcon(QObject* parent)
         : QSystemTrayIcon(parent)
 {
-    m_defaultIcon.addFile("data/pandora.svg"); // TODO find a better way to do this
+    m_defaultIcon.addFile(":/data/pandora.svg"); // TODO find a better way to do this
     setIcon(m_defaultIcon);
 
     setupMenu();
