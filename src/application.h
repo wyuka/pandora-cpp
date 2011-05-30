@@ -36,6 +36,7 @@ public:
     Application(int& argc, char** argv);
     virtual ~Application();
 
+    QString pandoraPath();
 signals:
     //void localChanged();
 

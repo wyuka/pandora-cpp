@@ -29,6 +29,7 @@
 #include "systemtrayicon.h"
 
 //Qt includes
+#include <QtCore/QDir>
 
 Application::Application(int& argc, char** argv)
         : QApplication(argc, argv)
@@ -50,9 +51,15 @@ Application::~Application()
 }
 
 
+QString Application::pandoraPath()
+{
+    return QDir::homePath() + "/pandoratest";
+}
+
+
 void Application::postLaunch()
 {
-    m_watcher->watchPath("/home/tirtha/pandoratest/");
+    m_watcher->watchPath(pandoraPath());
 }
 
 
